@@ -23,6 +23,10 @@ static const int showsystray              = 1;        /* 0 means no systray */
 static const int horizpadbar              = 10;       /* horizontal padding for statusbar */
 static const int vertpadbar               = 10;       /* vertical padding for statusbar */
 
+/* barpadding */
+static const int vertpad                  = 10;       /* vertical padding of bar */
+static const int sidepad                  = 10;       /* horizontal padding of bar */
+
 /* colors */
 #include "themes/catppuccin.h"
 static const char *colors[][3]      = {
