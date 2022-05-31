@@ -27,6 +27,9 @@ static const int vertpadbar               = 10;       /* vertical padding for st
 static const int vertpad                  = 10;       /* vertical padding of bar */
 static const int sidepad                  = 10;       /* horizontal padding of bar */
 
+/* fullgaps */
+static const Gap default_gap              = {.isgap = 1, .realgap = 10, .gappx = 10};
+
 /* colors */
 #include "themes/catppuccin.h"
 static const char *colors[][3]      = {
@@ -109,6 +112,11 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_w,      killclient,     {0} },
 	{ MODKEY,                       XK_q,      focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_q,      tagmon,         {.i = +1 } },
+
+	{ MODKEY,                       XK_minus,  setgaps,        {.i = -5 } },
+	{ MODKEY,                       XK_equal,  setgaps,        {.i = +5 } },
+	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = GAP_RESET } },
+	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = GAP_TOGGLE} },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
