@@ -31,7 +31,7 @@ static const int sidepad                  = 10;       /* horizontal padding of b
 static const Gap default_gap              = {.isgap = 1, .realgap = 10, .gappx = 10};
 
 /* colors */
-#include "themes/catppuccin.h"
+#include "themes/nord.h"
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { norm_fg,   norm_bg,   norm_border },

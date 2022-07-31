@@ -19,9 +19,9 @@
  * purple:     "#6c77bb"
  * */
 
-static const char norm_fg[]       = "#d8dee9";
+static const char norm_fg[]       = "#616e88";
 static const char norm_bg[]       = "#292d3e";
 static const char norm_border[]   = "#3b4252";
-static const char sel_fg[]        = "#292d3e";
-static const char sel_bg[]        = "#828dd1";
+static const char sel_fg[]        = "#88c0d0";
+static const char sel_bg[]        = "#3b4252";
 static const char sel_border[]    = "#828dd1";
